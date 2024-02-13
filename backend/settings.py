@@ -33,7 +33,7 @@ INSTALLED_APPS = [
     'unisteel',
 ]
 
-CORS_ALLOWED_ORIGINS = ['http://localhost:5173']
+CORS_ALLOWED_ORIGINS = ['http://localhost:5173', 'https://unisteel.netlify.app']
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -66,6 +66,7 @@ TEMPLATES = [
 
 CORS_ORIGIN_WHITELIST = [
     'http://localhost:5173',
+    'https://unisteel.netlify.app'
 ]
 
 WSGI_APPLICATION = 'backend.wsgi.application'

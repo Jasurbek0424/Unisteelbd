@@ -1,0 +1,33 @@
+CommandError: "@" is not a valid port number or address:port pair.
+Watching for file changes with StatReloader
+[13/Feb/2024 19:43:49] "GET /api/ HTTP/1.1" 200 10825
+[13/Feb/2024 19:43:50] "GET /static/rest_framework/css/default.css HTTP/1.1" 304 0
+[13/Feb/2024 19:43:50] "GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
+[13/Feb/2024 19:43:50] "GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0
+[13/Feb/2024 19:43:50] "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+[13/Feb/2024 19:43:50] "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0
+[13/Feb/2024 19:43:50] "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0
+[13/Feb/2024 19:43:50] "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+[13/Feb/2024 19:43:50] "GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
+[13/Feb/2024 19:43:50] "GET /static/rest_framework/js/jquery-3.5.1.min.js HTTP/1.1" 304 0
+[13/Feb/2024 19:43:50] "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
+Performing system checks...
+
+System check identified no issues (0 silenced).
+February 13, 2024 - 19:43:36
+Django version 5.0.1, using settings 'backend.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+
+CommandError: "." is not a valid port number or address:port pair.
+Watching for file changes with StatReloader
+[13/Feb/2024 19:45:47] "GET /api/ HTTP/1.1" 200 10825
+[13/Feb/2024 19:45:48] "GET /static/rest_framework/img/grid.png HTTP/1.1" 304 0
+[13/Feb/2024 19:45:58] "GET /api/servises/ HTTP/1.1" 200 10620
+[13/Feb/2024 19:45:58] "GET /api/Products/ HTTP/1.1" 200 30737
+[13/Feb/2024 19:45:58] "GET /api/information/ HTTP/1.1" 200 204
+[13/Feb/2024 19:46:00] "GET /api/information/ HTTP/1.1" 200 204
+[13/Feb/2024 19:46:09] "GET /media/photos/%C3%87%CE%B1%C2%BC%C3%A1%CE%93%CF%80%CE%B1%C3%A1_bfLeQ81.png HTTP/1.1" 200 135424
+[13/Feb/2024 19:46:10] "GET /media/photos/%C3%85%CE%B1%CE%A3%C3%A1%C3%9F%CE%93%C2%BD.png HTTP/1.1" 200 97324
+[13/Feb/2024 19:46:14] "GET /media/photos/%C3%86%CE%B1%CF%80%C3%AD%C3%A1_%C2%B5%C3%B3%C3%A1%C3%A1_HZkbX4S.png HTTP/1.1" 200 63038
+[13/Feb/2024 19:46:15] "GET /media/photos/%C3%86%CE%B1%CF%80%C3%AD%C3%A1_%C3%AD%C3%91%C3%9F%CE%A6%C3%B3%C3%A1.png HTTP/1.1" 200 71516

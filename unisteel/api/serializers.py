@@ -1,4 +1,4 @@
-from rest_framework.serializers import ModelSerializer
+from rest_framework.serializers import ModelSerializer,SerializerMethodField
 from ..models import Product, Contacts, Rekviziti, CompaniyInfo, Servises
 
 class ProductSerializer(ModelSerializer):
@@ -22,6 +22,14 @@ class CompaniyInfoSerializer(ModelSerializer):
         fields = '__all__'
 
 class ServisesSerializer(ModelSerializer):
+    image=SerializerMethodField()
     class Meta:
         model = Servises
         fields = '__all__'
+    
+    def get_image(self,obj):
+        try:
+            return f"https://vigilant-space-xylophone-vrrjxwj7pv52ww6j-8000.app.github.dev{obj.image.url}"
+        except:
+            return "https://m.media-amazon.com/images/I/21cOE-lrhBL._AC_UF1000,1000_QL80_.jpg"
+        

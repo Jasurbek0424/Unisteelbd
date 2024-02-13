@@ -26,7 +26,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-
+    'django.contrib.sites',
     'rest_framework',
     'corsheaders',
 
@@ -40,7 +40,7 @@ MIDDLEWARE = [
     'django.contrib.sessions.middleware.SessionMiddleware',
     'corsheaders.middleware.CorsMiddleware',
     'django.middleware.common.CommonMiddleware',
-    'django.middleware.csrf.CsrfViewMiddleware',
+#    'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
@@ -66,8 +66,10 @@ TEMPLATES = [
 
 CORS_ORIGIN_WHITELIST = [
     'http://localhost:5173',
-    'https://unisteel.netlify.app'
+    'https://unisteel.netlify.app',
+    'https://vigilant-space-xylophone-vrrjxwj7pv52ww6j-8000.app.github.dev'
 ]
+CSRF_TRUSTED_ORIGINS=['https://localhost:8000','https://vigilant-space-xylophone-vrrjxwj7pv52ww6j-8000.app.github.dev/','https://vigilant-space-xylophone-vrrjxwj7pv52ww6j.github.dev/']
 
 WSGI_APPLICATION = 'backend.wsgi.application'
 

@@ -5,7 +5,7 @@ from django.db import models
 
 class Product(models.Model):
     title = models.CharField(max_length=255, unique=True)
-    gost = models.CharField(max_length=255)
+    gost = models.CharField(blank=True, null=True, max_length=255)
     category = models.CharField(max_length=255)
     country = models.CharField(blank=True, null=True, max_length=255)
     size = models.CharField(blank=True, null=True, max_length=500)

@@ -27,14 +27,14 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    #'django.contrib.sites',
+#    'django.contrib.sites',
     'rest_framework',
     'corsheaders',
 
     'unisteel',
 ]
 
-CORS_ALLOWED_ORIGINS = ['http://localhost:5173', 'https://unisteel.netlify.app']
+CORS_ALLOWED_ORIGINS = ['https://toounisteel.kz','http://toounisteel.kz']
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -66,9 +66,8 @@ TEMPLATES = [
 ]
 
 CORS_ORIGIN_WHITELIST = [
-    'http://localhost:5173',
-    'https://unisteel.netlify.app',
-    'https://vigilant-space-xylophone-vrrjxwj7pv52ww6j-8000.app.github.dev'
+    'http://toounisteel.kz',
+    'https://toounisteel.kz'
 ]
 CSRF_TRUSTED_ORIGINS=['https://localhost:8000','https://vigilant-space-xylophone-vrrjxwj7pv52ww6j-8000.app.github.dev/','https://vigilant-space-xylophone-vrrjxwj7pv52ww6j.github.dev/']
 
@@ -121,7 +120,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
 
 STATIC_URL = 'static/'
-
+STATIC_ROOT = os.path.join(BASE_DIR,'staticfiles/')
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
@@ -130,3 +129,4 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+

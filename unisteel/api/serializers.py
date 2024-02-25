@@ -29,7 +29,7 @@ class ServisesSerializer(ModelSerializer):
     
     def get_image(self,obj):
         try:
-            return f"https://2543655-yo82697.twc1.net{obj.image.url}"
+            return f"https://toounisteel.kz{obj.image.url}"
         except:
             return "https://m.media-amazon.com/images/I/21cOE-lrhBL._AC_UF1000,1000_QL80_.jpg"
         

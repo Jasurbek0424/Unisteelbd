@@ -8,4 +8,5 @@ __pycache__/
 .Python
 env/
 nohup.out
+staticfiles/
 db.sqlite3

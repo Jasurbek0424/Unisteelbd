@@ -18,7 +18,7 @@ class Product(models.Model):
 
     def get_photo(self):
         try:
-            return f"https://2543655-yo82697.twc1.net{self.photo.url}"
+            return f"https://toounisteel.kz{self.photo.url}"
         except:
             return "https://m.media-amazon.com/images/I/21cOE-lrhBL._AC_UF1000,1000_QL80_.jpg"
         
